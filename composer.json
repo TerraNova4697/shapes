@@ -1,0 +1,14 @@
+{
+    "name": "nik/php-shapes",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nikita B"
+        }
+    ],
+    "require": {}
+}
