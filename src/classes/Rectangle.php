@@ -36,12 +36,18 @@ class Rectangle extends Shape
 
     public function setWidth(float $width): void
     {
+        if ($width <= 0) {
+            throw new InvalidArgumentException("Длина и ширина прямоугольника должны быть больше нуля.");
+        }
         $this->uncacheArea();
         $this->width = $width;
     }
 
     public function setLength(float $length): void
     {
+        if ($length <= 0) {
+            throw new InvalidArgumentException("Длина и ширина прямоугольника должны быть больше нуля.");
+        }
         $this->uncacheArea();
         $this->length = $length;
     }

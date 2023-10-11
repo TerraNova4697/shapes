@@ -10,5 +10,7 @@
             "name": "Nikita B"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^10"
+    }
 }

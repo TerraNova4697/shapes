@@ -34,6 +34,9 @@ class Circle extends Shape
 
     public function setRadius(float $radius): void
     {
+        if ($radius <= 0) {
+            throw new InvalidArgumentException("Радиус круга должен быть больше нуля.");
+        }
         $this->radius = $radius;
         $this->uncacheArea();
     }

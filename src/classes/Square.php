@@ -35,6 +35,9 @@ class Square extends Shape
 
     public function setSide(float $side): void
     {
+        if ($side <= 0) {
+            throw new InvalidArgumentException("Длина стороны квадрата должна быть больше нуля.");
+        }
         $this->side = $side;
         $this->uncacheArea();
     }
